@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>FNF Beatmap Converter</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+		<script src="convert.js" defer></script>
+	</head>
+	<body>
+		<div id="warningNotice" style="background-color: #ff4d5c; padding: 1em; margin-top:0em; color: white; left:0; border-radius:0.25em;">
+			<b>Hey!</b> This is a fork from <a style="color: white; font-weight: bold" href="https://cabalex.github.io">Cabalex's</a> original <a style="color: white; font-weight: bold" href="https://cabalex.github.io/fnf-song-converter/">repository</a>. The code isn't mine, I just made some changes.
+		</div>
+		<br>
+		<form>
+			<div style="width: 90%; padding-bottom: 20px; max-width: 500px; flex-direction: row; justify-content: left; flex-wrap: wrap; display: flex; background-color: rgba(77, 151, 255, 0.25); align-items: center; border-radius: 0.25rem; padding: 0 0.5em">
+				<p>
+					Extended note handling (e.g. Custom notes):
+					<select name="noteHandlingSelector" id="noteHandlingSelector" onchange="document.getElementById('fileInput').value = ''; document.getElementById('output').innerHTML = '';">
+						<option value="ignore">Ignore all unexpected notes</option>
+						<option value="modulo">Limit to default range (0-7), ignore modified notes</option>
+						<option value="expanded_truncate">Allow all notes, truncate extra data (EXPERIMENTAL)</option>
+						<option value="expanded_unmodified_truncate">Allow all notes without modifications, truncate extra data (EXPERIMENTAL)</option>
+						<option value="expanded">Allow all notes, include extra data (EXPERIMENTAL)</option>
+						<option value="expanded_unmodified">Allow all notes without modifications, include extra data (EXPERIMENTAL)</option>
+				</select>
+				<br><a style="font-size: 12px;" href="https://github.com/cabalex/fnf-song-converter/wiki#what-do-the-extended-note-handling-options-mean">What does this mean?</a></p>
+				<p id="fileName" onclick="getFile()" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">Import file</p>
+			</div>
+			<div style='height: 0px;width: 0px; overflow:hidden;'><input type="file" accept=".json", id="fileInput", onchange="fileLoad(event)"></div>
+		</form>
+		<div id="output" style="width: 90%; max-width: 500px; flex-direction: row; justify-content: left; flex-wrap: wrap; display: flex; background-color: rgba(77, 151, 255, 0.25); align-items: center; border-radius: 0.25rem; padding:0.5em; margin:0.5em 0; display: none;"></div>
+		<small> <a href="https://github.com/cabalex/fnf-song-converter"> used source code </small>
+	</body>
+</html>

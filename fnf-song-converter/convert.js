@@ -165,7 +165,7 @@ function loadFile(file) {
     }
 
     // Create download link for outputted text file
-    const blob = new Blob([scratchList.join("\n") + "\n"+bpm + "\n"+speed], {type : 'text/plain'});
+    const blob = new Blob([scratchList.join("\n") + "\n"+"b"+bpm + "\n"+"s"+speed], {type : 'text/plain'});
     const a = document.createElement('a');
     document.body.appendChild(a);
     const url = window.URL.createObjectURL(blob);

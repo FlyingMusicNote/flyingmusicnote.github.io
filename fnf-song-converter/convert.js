@@ -65,7 +65,6 @@ function loadFile(file) {
     outputTextInitial.innerHTML = `"${json.song.song}" | ${json.song.bpm} BPM | SPEED ${parseFloat(json.song.speed).toFixed(2)}`
     outputArea.appendChild(outputTextInitial);
 
-    const name = json.song.song;
     const bpm = json.song.bpm;
     const speed = parseFloat(json.song.speed).toFixed(2);
     const scratchList = [];
@@ -166,7 +165,7 @@ function loadFile(file) {
     }
 
     // Create download link for outputted text file
-    const blob = new Blob([scratchList.join("\n") + "\n"+"b"+bpm + "\n"+"s"+speed + "\n"+"n"+name], {type : 'text/plain'});
+    const blob = new Blob([scratchList.join("\n") + "\n"+"b"+bpm + "\n"+"s"+speed + "\n"+""], {type : 'text/plain'});
     const a = document.createElement('a');
     document.body.appendChild(a);
     const url = window.URL.createObjectURL(blob);

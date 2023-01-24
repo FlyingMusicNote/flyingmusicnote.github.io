@@ -5,6 +5,6 @@ git init
 git add -A
 git commit -am "commit"
 git branch -M main
-:: git remote add origin https://github.com/(user)/(user).github.io.git
+git remote add origin https://github.com/flyingmusicnote/flyingmusicnote.github.io.git
 git push -u origin main
 pause

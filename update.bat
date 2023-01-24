@@ -3,6 +3,6 @@
 
 git add .
 git commit -m "commit" 
-git remote add origin https://github.com/flyingmusicnote/flyingmusicnote.github.io.git
+git remote add origin https://github.com/FlyingMusicNote/fnf-song-converter.git
 git push -u origin main
 pause

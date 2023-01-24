@@ -165,7 +165,11 @@ function loadFile(file) {
     }
 
     // Create download link for outputted text file
+<<<<<<< HEAD
+    const blob = new Blob([scratchList.join("\n") + "\n"+"b"+bpm + "\n"+"s"+speed], {type : 'text/plain'});
+=======
     const blob = new Blob([scratchList.join("\n") + "\n"+"!"+bpm + "\n"+","+speed], {type : 'text/plain'});
+>>>>>>> 2c3af893aae8dd02b6de44bff1aba4b43b04db74
     const a = document.createElement('a');
     document.body.appendChild(a);
     const url = window.URL.createObjectURL(blob);

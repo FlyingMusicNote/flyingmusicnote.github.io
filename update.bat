@@ -5,5 +5,4 @@ git add .
 git commit -m "commit" 
 git remote add origin https://github.com/flyingmusicnote/flyingmusicnote.github.io.git
 git push -u origin main
-git status
 pause

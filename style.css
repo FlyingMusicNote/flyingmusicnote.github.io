@@ -1,6 +1,7 @@
 :root {
     --black: #111111;
-    --purple: #5d1e61;
+    --grey: #333333;
+    --purple: #47174b;
     color-scheme: dark;
 }
 
@@ -8,13 +9,17 @@ body {
     background-color: var(--black);
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
+    margin: 10px;
 }
 header {
     background-color: var(--purple);
+}
+header {
     border-radius: 0.25em;
-    height: 125px;
-    margin: 10px;
+    height: 120px;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
     top: 0;
     position: relative;
 }

@@ -5,5 +5,6 @@ git init
 git add -A
 git commit -am "commit"
 git branch -M main
+git remote add origin https://github.com/nicholascz0/poopygaming.github.io.git
 git push -u origin main
 pause

@@ -1,7 +1,7 @@
 :root {
     --black: #111111;
     --grey: #333333;
-    --purple: #47174b;
+    --lightgrey: #4a4a4a;
     color-scheme: dark;
 }
 
@@ -12,9 +12,12 @@ body {
     margin: 10px;
 }
 header {
-    background-color: var(--purple);
+    background-color: var(--lightgrey);
 }
-header {
+footer {
+    background-color: var(--grey);
+}
+header, footer {
     border-radius: 0.25em;
     height: 120px;
     align-items: center;

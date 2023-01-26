@@ -1,0 +1,28 @@
+:root {
+    --black: #111111;
+    --grey: #333333;
+    --lightgrey: #4a4a4a;
+    color-scheme: dark;
+}
+
+body {
+    background-color: var(--black);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+}
+header {
+    background-color: var(--lightgrey);
+}
+footer {
+    background-color: var(--grey);
+}
+header, footer {
+    border-radius: 0.25em;
+    height: 120px;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    top: 0;
+    position: relative;
+}

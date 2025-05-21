@@ -1,0 +1,14 @@
+.centerBorder {
+    margin: auto;
+    width: 300px;
+    padding: 30px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
